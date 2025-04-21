@@ -1,24 +1,23 @@
 import styled from 'styled-components';
 
 export const Card = styled.div`
-  margin-top: 40px;
+  margin-top: 20px;
   display: flex;
   align-items: center;
-  background-color:#dedede;
-  color: #000;
-  padding: 20px;
-  border-radius: 20px;
+  background-color: #D9D9D9;
+  padding: 10px 18px;
+  border-radius: 16px;
   max-width: 700px;
-  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
 `;
 
 export const Avatar = styled.img`
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   object-fit: cover;
   margin-right: 24px;
-  border: 4px solid #007bff;
+  border: 2px solid #005cff;
 `;
 
 export const Info = styled.div`
@@ -27,22 +26,14 @@ export const Info = styled.div`
 `;
 
 export const Name = styled.h2`
-  font-size: 1.5rem;
-  color: #007bff;
-  margin-bottom: 8px;
+  font-size: 1.3rem;
+  color: #005cff;
+  font-weight: 600;
+  margin-bottom: 10px;
 `;
 
 export const Bio = styled.p`
-  font-size: 1rem;
+  font-size: 0.9rem;
   margin-bottom: 12px;
   line-height: 1.5;
-`;
-
-export const ProfileLink = styled.a`
-  color: #007bff;
-  font-weight: bold;
-  text-decoration: none;
-  &:hover {
-    text-decoration: underline;
-  }
 `;

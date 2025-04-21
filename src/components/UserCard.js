@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Card, Avatar, Info, Name, Bio, ProfileLink } from '@/styles/UserCardStyles';
+import { Card, Avatar, Info, Name, Bio } from '@/styles/UserCardStyles';
 
 export default function UserCard({ user }) {
   return (

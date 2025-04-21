@@ -1,78 +1,95 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background: linear-gradient(to right, #000000, #0f0f10);
-  color: #fff;
-  width: 100%;
-  max-width: 100vw;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-family: Arial, sans-serif;
-  padding: 20px;
+  justify-content: flex-start;
+  padding-top: 80px;
+  min-height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+`;
+
+export const ContentBox = styled.div`
+  background-color: #000;
+  width: 100%;
+  max-width: 1000px;
+  height: 450px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.7);
 `;
 
 export const Title = styled.h1`
   display: flex;
   align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: white;
+  margin-bottom: 40px;
+  font-weight: bold;
   gap: 10px;
-  font-size: 2.5rem;
-  font-weight: 500;
-  margin-bottom: 20px;
 
-  strong {
-    font-weight: bold;
+  svg {
+    width: 35px;
+    height: 35px;
+    fill: white;
   }
-`;
-
-export const GitHubLogo = styled.img`
-  width: 40px;
-  height: 40px;
 `;
 
 export const SearchBox = styled.div`
   display: flex;
+  width: 100%;
+  max-width: 400px;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.2);
+  margin-bottom: 15px;
+  background-color: white;
 `;
 
 export const Input = styled.input`
-  padding: 12px;
-  width: 300px;
+  flex: 1;
+  padding: 12px 16px;
   border: none;
-  outline: none;
-  font-size: 1rem;
+  font-size: 16px;
+  border-radius: 10px 0 0 10px;
+  background-color: white;  
+
+  &::placeholder {
+    font-size: 16px;
+    color: #000;                   
+  }
 `;
 
 export const Button = styled.button`
-  background-color: #007bff;
+  width: 50px;
+  background: #005cff;
   border: none;
-  color: white;
-  padding: 0 20px;
-  font-size: 1.2rem;
   cursor: pointer;
+  border-radius: 0 10px 10px 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.3s ease;
+  transition: background 0.3s ease;
 
   &:hover {
-    background-color: #0056b3;
+    background: #005cff;
   }
 `;
 
 export const ErrorBox = styled.div`
-  background-color: #e0e0e0;
-  color: red;
-  padding: 20px 30px;
-  margin-top: 30px;
-  border-radius: 12px;
-  font-size: 1rem;
+  background-color: #D9D9D9;
+  color: #f82929;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 10px;
+  width: 70%;
   text-align: center;
-  max-width: 600px;
-  font-weight: 500;
-  border: 1px solid #ccc;
+  font-size: 14px;
+  animation: fadeIn 0.3s ease-in-out;
 `;
